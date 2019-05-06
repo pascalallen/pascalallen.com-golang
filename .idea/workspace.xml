@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0e967ca-535b-49be-b643-b3ef19573e15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/src/app/queries/fields/getPosts.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app/mutations/mutations.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app/mutations/mutations.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/server/src/app/data/mongo.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -44,16 +44,25 @@
         <entry file="file://$PROJECT_DIR$/server/src/app/queries/queries.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/app/queries/fields/getPosts.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/src/app/queries/fields/getPosts.go">
+        <entry file="file://$PROJECT_DIR$/server/src/app/mutations/mutations.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+            <state relative-caret-position="150">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -82,6 +91,7 @@
         <option value="$PROJECT_DIR$/server/src/app/types/post.go" />
         <option value="$PROJECT_DIR$/server/src/app/queries/queries.go" />
         <option value="$PROJECT_DIR$/server/src/app/queries/fields/getPosts.go" />
+        <option value="$PROJECT_DIR$/server/src/app/mutations/mutations.go" />
       </list>
     </option>
   </component>
@@ -134,7 +144,7 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="queries" type="462c0819:PsiDirectoryNode" />
+              <item name="mutations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pascalallen.com" type="b2602c69:ProjectViewProjectNode" />
@@ -143,7 +153,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="queries" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pascalallen.com" type="b2602c69:ProjectViewProjectNode" />
@@ -190,7 +199,7 @@
       <option name="presentableId" value="Default" />
       <updated>1556911576124</updated>
       <workItem from="1556911577556" duration="4370000" />
-      <workItem from="1557163697792" duration="1832000" />
+      <workItem from="1557163697792" duration="2163000" />
     </task>
     <task id="LOCAL-00001" summary="Init web server">
       <created>1556916013222</created>
@@ -234,11 +243,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557164598737</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Create query for getting posts. Create mutations file.">
+      <created>1557166402588</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1557166402588</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6202000" />
+    <option name="totallyTimeSpent" value="6533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -275,7 +291,8 @@
     <MESSAGE value="Workspace update?" />
     <MESSAGE value="Gitignore" />
     <MESSAGE value="Create directories for GraphQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create directories for GraphQL" />
+    <MESSAGE value="Create query for getting posts. Create mutations file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create query for getting posts. Create mutations file." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/home.go" />
@@ -309,13 +326,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/app/data/mongo.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/app/types/post.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -326,14 +336,28 @@
     <entry file="file://$PROJECT_DIR$/server/src/app/queries/queries.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/app/data/mongo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/app/queries/fields/getPosts.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+        <state relative-caret-position="540">
+          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/app/mutations/mutations.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
         </state>
       </provider>
     </entry>
