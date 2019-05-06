@@ -28,7 +28,7 @@ var CreatePost = &graphql.Field {
         // get our params
         title, _ := params.Args["title"].(string)
         body, _ := params.Args["body"].(string)
-        postCollection := mongo.Client.Database("medium-app").Collection("Posts")
+        postCollection := mysql.Client.Database("pascalallen.com").Collection("Posts")
         _, err := postCollection.InsertOne(context.Background(), map[string]string{"title": title, "body": body })
         if err != nil { panic(err) }
         return postStruct{title, body}, nil
