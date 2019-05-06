@@ -26,11 +26,11 @@ var CreatePost = &graphql.Field {
 
     Resolve: func(params graphql.ResolveParams) (interface{}, error) {
         // get our params
-        name, _ := params.Args["name"].(string)
-        description, _ := params.Args["description"].(string)
-        notTodoCollection := mongo.Client.Database("medium-app").Collection("Not_Todos")
-        _, err := notTodoCollection.InsertOne(context.Background(), map[string]string{"name": name, "description": description })
+        title, _ := params.Args["title"].(string)
+        body, _ := params.Args["body"].(string)
+        postCollection := mongo.Client.Database("medium-app").Collection("Posts")
+        _, err := postCollection.InsertOne(context.Background(), map[string]string{"title": title, "body": body })
         if err != nil { panic(err) }
-        return todoStruct{name, description}, nil
+        return postStruct{title, body}, nil
     },
 }

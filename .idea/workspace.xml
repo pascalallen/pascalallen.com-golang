@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d0e967ca-535b-49be-b643-b3ef19573e15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app/mutations/mutations.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app/mutations/mutations.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app/mutations/fields/createPost.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app/mutations/fields/createPost.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,11 +58,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/app/mutations/mutations.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/src/app/mutations/fields/createPost.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -92,6 +101,7 @@
         <option value="$PROJECT_DIR$/server/src/app/queries/queries.go" />
         <option value="$PROJECT_DIR$/server/src/app/queries/fields/getPosts.go" />
         <option value="$PROJECT_DIR$/server/src/app/mutations/mutations.go" />
+        <option value="$PROJECT_DIR$/server/src/app/mutations/fields/createPost.go" />
       </list>
     </option>
   </component>
@@ -152,6 +162,15 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="mutations" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pascalallen.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pascalallen.com" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="queries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -199,7 +218,7 @@
       <option name="presentableId" value="Default" />
       <updated>1556911576124</updated>
       <workItem from="1556911577556" duration="4370000" />
-      <workItem from="1557163697792" duration="2163000" />
+      <workItem from="1557163697792" duration="2753000" />
     </task>
     <task id="LOCAL-00001" summary="Init web server">
       <created>1556916013222</created>
@@ -250,17 +269,31 @@
       <option name="project" value="LOCAL" />
       <updated>1557166402588</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Create mutations file. Used for creating data, as queries are bad practice for creating data.">
+      <created>1557166531036</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1557166531036</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add mutation for creating a post.">
+      <created>1557166958463</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1557166958463</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6533000" />
+    <option name="totallyTimeSpent" value="7123000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.103785105" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.103785105" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
@@ -292,7 +325,9 @@
     <MESSAGE value="Gitignore" />
     <MESSAGE value="Create directories for GraphQL" />
     <MESSAGE value="Create query for getting posts. Create mutations file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create query for getting posts. Create mutations file." />
+    <MESSAGE value="Create mutations file. Used for creating data, as queries are bad practice for creating data." />
+    <MESSAGE value="Add mutation for creating a post." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add mutation for creating a post." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/home.go" />
@@ -358,6 +393,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/app/mutations/fields/createPost.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
         </state>
       </provider>
     </entry>
