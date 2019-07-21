@@ -4,6 +4,7 @@ import (
     "context"
     "github.com/graphql-go/graphql"
     "github.com/mongodb/mongo-go-driver/bson"
+    "github.com/go-sql-driver/mysql"
 
     "app/data"
     types "app/types"
@@ -19,7 +20,7 @@ var GetPosts = &graphql.Field {
     Description: "Get all posts",
     Resolve:     func(params graphql.ResolveParams) (interface{}, error) {
 
-        postCollection := mongo.Client.Database("medium-app").Collection("Posts")
+        postCollection := mysql.Client.Database("pascalallen.com").Collection("Posts")
         posts, err := postCollection.Find(context.Background(), nil)
         if err != nil { panic(err) }
         var postsList []postStruct
