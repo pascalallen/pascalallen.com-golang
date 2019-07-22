@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d0e967ca-535b-49be-b643-b3ef19573e15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app/Gopkg.toml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app/Gopkg.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app/queries/fields/getPosts.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app/queries/fields/getPosts.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app/Gopkg.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app/Gopkg.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app/data/mongo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app/data/mysql.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app/mutations/fields/createPost.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app/mutations/mutations.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app/queries/fields/getPosts.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app/queries/queries.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/app/types/post.go" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,10 +27,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/src/app/queries/fields/getPosts.go">
+        <entry file="file://$PROJECT_DIR$/server/src/app/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+            <state relative-caret-position="315">
+              <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -45,18 +50,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/home.go" />
-        <option value="$PROJECT_DIR$/server/src/app/data/mongo.go" />
-        <option value="$PROJECT_DIR$/server/src/app/main.go" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/server/src/app/types/post.go" />
         <option value="$PROJECT_DIR$/server/src/app/queries/queries.go" />
         <option value="$PROJECT_DIR$/server/src/app/mutations/mutations.go" />
-        <option value="$PROJECT_DIR$/server/src/app/data/mysql.go" />
         <option value="$PROJECT_DIR$/server/src/app/mutations/fields/createPost.go" />
         <option value="$PROJECT_DIR$/server/src/app/queries/fields/getPosts.go" />
         <option value="$PROJECT_DIR$/server/src/app/Gopkg.toml" />
         <option value="$PROJECT_DIR$/server/src/app/Gopkg.lock" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/server/src/app/data/mongo.go" />
+        <option value="$PROJECT_DIR$/server/src/app/data/mysql.go" />
+        <option value="$PROJECT_DIR$/server/src/app/main.go" />
       </list>
     </option>
   </component>
@@ -86,6 +91,12 @@
               <item name="pascalallen.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="pascalallen.com" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pascalallen.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pascalallen.com" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -94,31 +105,6 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pascalallen.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pascalallen.com" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="queries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pascalallen.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pascalallen.com" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="queries" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pascalallen.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pascalallen.com" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -133,6 +119,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -161,7 +148,10 @@
       <workItem from="1557180471778" duration="740000" />
       <workItem from="1557246151687" duration="190000" />
       <workItem from="1563749374037" duration="1351000" />
-      <workItem from="1563750900860" duration="1328000" />
+      <workItem from="1563750900860" duration="1643000" />
+      <workItem from="1563829584618" duration="98000" />
+      <workItem from="1563829704123" duration="340000" />
+      <workItem from="1563830060115" duration="2411000" />
     </task>
     <task id="LOCAL-00001" summary="Init web server">
       <created>1556916013222</created>
@@ -240,17 +230,24 @@
       <option name="project" value="LOCAL" />
       <updated>1557169124875</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update dependencies, update readme.">
+      <created>1563752555050</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1563752555050</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12635000" />
+    <option name="totallyTimeSpent" value="15799000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.108093716" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11128861" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
@@ -264,11 +261,12 @@
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Terminal" order="4" visible="true" weight="0.328541" />
+      <window_info active="true" anchor="right" id="Terminal" order="4" visible="true" weight="0.328541" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,38 +284,12 @@
     <MESSAGE value="Add mutation for creating a post." />
     <MESSAGE value="Update createPost mutation." />
     <MESSAGE value="Add MySQL driver" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add MySQL driver" />
+    <MESSAGE value="Update dependencies, update readme." />
+    <MESSAGE value="Update idea file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update idea file" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/home.go" />
-    <entry file="file://$PROJECT_DIR$/server/src/app/queries/queries.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/app/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/app/data/mongo.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/app/mutations/fields/createPost.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/pkg/dep/sources/https---github.com-go--sql--driver-mysql/transaction.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -326,37 +298,7 @@
         <state relative-caret-position="-8488" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/app/mutations/mutations.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/app/data/mysql.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/pkg/dep/sm.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/app/Gopkg.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/pkg/dep/sm.lock" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -367,24 +309,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/app/Gopkg.lock">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        <state relative-caret-position="675">
+          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/app/mutations/mutations.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/app/data/mongo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/app/mutations/fields/createPost.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/app/queries/queries.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/app/queries/fields/getPosts.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/app/types/post.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/app/queries/fields/getPosts.go">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/app/Gopkg.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/app/Gopkg.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/app/data/mysql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/app/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
         </state>
       </provider>
     </entry>

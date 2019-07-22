@@ -1,43 +1,31 @@
 package main
 
 import (
-    "log"
-    "net/http"
-    "github.com/graphql-go/graphql"
-    "github.com/graphql-go/handler"
-    "app/queries"
-    "app/mutations"
+    "fmt"
+    "database/sql"
+    _ "github.com/go-sql-driver/mysql"
 )
 
-var schema, _ = graphql.NewSchema(graphql.SchemaConfig{
-    Query: queries.RootQuery,
-    Mutation: mutations.RootMutation,
-})
-
 func main() {
-    h := handler.New(&handler.Config{
-        Schema: &schema,
-        Pretty: true,
-    })
+    fmt.Println("Go MySQL Tutorial")
 
-    http.Handle("/graphql", disableCors(h))
-    log.Println("Now server is running on port 3000")
-    http.ListenAndServe(":3000", nil)
-}
+    db, err := sql.Open("mysql", "homestead:secret@tcp(127.0.0.1:3306)/pascalallen.com")
 
-func disableCors(h http.Handler) http.Handler {
-    return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+    // if there is an error opening the connection, handle it
+    if err != nil {
+        panic(err.Error())
+    }
 
-        w.Header().Set("Access-Control-Allow-Origin", "*")
-        w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
-        w.Header().Set("Access-Control-Allow-Headers", "Accept, Authorization, Content-Type, Content-Length, Accept-Encoding")
+    defer db.Close()
 
-        if r.Method == "OPTIONS" {
-            w.Header().Set("Access-Control-Max-Age", "86400")
-            w.WriteHeader(http.StatusOK)
-            return
-        }
+    // perform a db.Query insert
+    insert, err := db.Query("INSERT INTO posts VALUES (1, 'title', 'body')")
 
-        h.ServeHTTP(w, r)
-    })
+    // if there is an error inserting, handle it
+    if err != nil {
+        panic(err.Error())
+    }
+
+    // be careful deferring Queries if you are using transactions
+    defer insert.Close()
 }
