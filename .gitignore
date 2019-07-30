@@ -1,4 +1,4 @@
 /server/pkg/
 /server/src/app/vendor/
-/.idea
+/.idea/
 .whitesource
