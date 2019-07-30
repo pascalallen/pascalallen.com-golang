@@ -4,11 +4,19 @@ import (
     "fmt"
     "log"
     "database/sql"
+    "net/http"
     _ "github.com/go-sql-driver/mysql"
 )
 
 func main() {
     fmt.Println("Go MySQL Tutorial")
+
+    http.Handle("/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+        log.Println("Hello Mars!")
+    }))
+
+    http.ListenAndServe(":3000", nil)
+    log.Println("Server is now running on port 3000")
 
     type Post struct {
         Id string `json:"id"`

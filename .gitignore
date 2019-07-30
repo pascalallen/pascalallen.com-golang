@@ -1,2 +1,4 @@
 /server/pkg/
 /server/src/app/vendor/
+.idea
+.whitesource

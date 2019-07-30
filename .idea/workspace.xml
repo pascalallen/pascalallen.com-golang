@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d0e967ca-535b-49be-b643-b3ef19573e15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app/Gopkg.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app/Gopkg.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app/data/mongo.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app/data/mysql.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app/mutations/fields/createPost.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app/mutations/mutations.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app/queries/fields/getPosts.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app/queries/queries.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app/types/post.go" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/src/app/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+            <state relative-caret-position="675">
+              <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -151,7 +143,7 @@
       <workItem from="1563750900860" duration="1643000" />
       <workItem from="1563829584618" duration="98000" />
       <workItem from="1563829704123" duration="340000" />
-      <workItem from="1563830060115" duration="2411000" />
+      <workItem from="1563830060115" duration="4598000" />
     </task>
     <task id="LOCAL-00001" summary="Init web server">
       <created>1556916013222</created>
@@ -237,11 +229,25 @@
       <option name="project" value="LOCAL" />
       <updated>1563752555050</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Basic config setup">
+      <created>1563832861308</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1563832861308</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Basic MySQL">
+      <created>1563833745826</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1563833745826</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15799000" />
+    <option name="totallyTimeSpent" value="17986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -286,7 +292,9 @@
     <MESSAGE value="Add MySQL driver" />
     <MESSAGE value="Update dependencies, update readme." />
     <MESSAGE value="Update idea file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update idea file" />
+    <MESSAGE value="Basic config setup" />
+    <MESSAGE value="Basic MySQL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic MySQL" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/home.go" />
@@ -386,10 +394,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/app/posts/posts.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/app/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+        <state relative-caret-position="675">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
         </state>
       </provider>
     </entry>
